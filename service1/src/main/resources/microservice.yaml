@@ -1,0 +1,10 @@
+APPLICATION_ID: show
+service_description:
+  name: com.yyy.service1
+  version: 1.0.5
+servicecomb:
+  service:
+    registry:
+      address: http://127.0.0.1:30300
+  rest:
+    address: 127.0.0.1:18083

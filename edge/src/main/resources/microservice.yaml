@@ -1,0 +1,17 @@
+APPLICATION_ID: show
+service_description:
+  name: edge
+  version: 0.0.1
+  environment: development
+servicecomb:
+  service:
+    registry:
+      address: http://127.0.0.1:30300
+  rest:
+    address: 127.0.0.1:18080
+  handler:
+    chain:
+      Consumer:
+        default: sso,loadbalance
+        service:
+          sso: loadbalance

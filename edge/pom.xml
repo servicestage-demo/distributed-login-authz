@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.xxx</groupId>
+  <artifactId>edge</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <properties>
+    <show.version>1.0-SNAPSHOT</show.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.apache.servicecomb</groupId>
+        <artifactId>java-chassis-dependencies</artifactId>
+        <version>1.2.0</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+  <dependencies>
+    <dependency>
+      <groupId>com.xxx</groupId>
+      <artifactId>sso-client</artifactId>
+      <version>${show.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.servicecomb</groupId>
+      <artifactId>edge-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.servicecomb</groupId>
+      <artifactId>handler-loadbalance</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.servicecomb</groupId>
+      <artifactId>provider-pojo</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.servicecomb</groupId>
+      <artifactId>solution-basic</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.servicecomb</groupId>
+      <artifactId>inspector</artifactId>
+    </dependency>
+
+  </dependencies>
+</project>

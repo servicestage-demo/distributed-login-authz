@@ -1,0 +1,11 @@
+APPLICATION_ID: show
+service_description:
+  name: sso
+  version: 1.0.3
+  environment: development
+servicecomb:
+  service:
+    registry:
+      address: http://127.0.0.1:30300
+  rest:
+    address: 127.0.0.1:18081
