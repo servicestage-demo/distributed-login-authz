@@ -23,9 +23,9 @@ public class AppMain {
     }
     BeanUtils.init();
     ApplicationContext context = BeanUtils.getContext();
-    String[] str=context.getBeanDefinitionNames();
+    String[] str = context.getBeanDefinitionNames();
     for (String string : str) {
-      System.out.println("..."+string);
+      System.out.println("..." + string);
     }
     System.out.println("...===============================");
 //    Annotation[] annotations = ServiceController.class.getAnnotations();

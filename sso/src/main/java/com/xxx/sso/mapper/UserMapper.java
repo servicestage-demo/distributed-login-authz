@@ -7,5 +7,5 @@ import com.xxx.sso.model.UserDto;
 
 @Repository
 public interface UserMapper {
-    UserDto getByAccount(String account);
+  UserDto getByAccount(String account);
 }

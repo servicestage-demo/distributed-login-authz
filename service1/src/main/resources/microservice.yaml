@@ -1,7 +1,8 @@
 APPLICATION_ID: show
 service_description:
-  name: com.yyy.service1
-  version: 1.0.5
+  name: service1
+  version: 1.0.8
+  environment: development
 servicecomb:
   service:
     registry:

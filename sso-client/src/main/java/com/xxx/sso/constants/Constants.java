@@ -8,7 +8,10 @@ public class Constants {
 
   public static final String ACCOUNT = "account";
 
-  public static final String PREFIX="api";
+  public static final String PREFIX = "api";
 
   public static final String X_TOKEN = "x-token";
+
+
+  public static final String PATH = "path";
 }

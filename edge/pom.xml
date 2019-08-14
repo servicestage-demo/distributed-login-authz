@@ -9,7 +9,7 @@
   <version>1.0-SNAPSHOT</version>
 
   <properties>
-    <show.version>1.0-SNAPSHOT</show.version>
+    <distributed-login-authz.version>1.0-SNAPSHOT</distributed-login-authz.version>
   </properties>
 
   <dependencyManagement>
@@ -27,7 +27,7 @@
     <dependency>
       <groupId>com.xxx</groupId>
       <artifactId>sso-client</artifactId>
-      <version>${show.version}</version>
+      <version>${distributed-login-authz.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.servicecomb</groupId>

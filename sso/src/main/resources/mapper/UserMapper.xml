@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.xxx.sso.mapper.UserMapper">
-  <select id="getByAccount" resultType="com.xxx.sso.model.UserDto" parameterType="String">
+  <select id="getByAccount" parameterType="String" resultType="com.xxx.sso.model.UserDto">
     SELECT
     id,
     account,
@@ -14,10 +14,10 @@
     account = #{account}
   </select>
   <resultMap id="BaseResultMap" type="com.xxx.sso.model.UserDto">
-    <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="account" jdbcType="VARCHAR" property="account" />
-    <result column="password" jdbcType="VARCHAR" property="password" />
-    <result column="username" jdbcType="VARCHAR" property="username" />
-    <result column="reg_time" jdbcType="TIMESTAMP" property="regTime" />
+    <id column="id" jdbcType="INTEGER" property="id"/>
+    <result column="account" jdbcType="VARCHAR" property="account"/>
+    <result column="password" jdbcType="VARCHAR" property="password"/>
+    <result column="username" jdbcType="VARCHAR" property="username"/>
+    <result column="reg_time" jdbcType="TIMESTAMP" property="regTime"/>
   </resultMap>
 </mapper>
