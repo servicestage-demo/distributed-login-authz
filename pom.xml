@@ -14,7 +14,7 @@
     <module>sso-client</module>
     <module>authz</module>
     <module>authz-client</module>
-    <module>service1</module>
+    <module>example</module>
   </modules>
 
 
