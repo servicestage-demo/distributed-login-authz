@@ -10,6 +10,7 @@
 
   <properties>
     <distributed-login-authz.version>1.0-SNAPSHOT</distributed-login-authz.version>
+    <java.version>1.8</java.version>
   </properties>
 
   <dependencyManagement>
