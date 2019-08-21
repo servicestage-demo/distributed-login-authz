@@ -88,5 +88,16 @@ APIGateway里访问redis，而不是访问auth服务，但是这样的架构不�
 ![avatar](doc/img/a3.png)
 
 
-
 *本demo的数据结构参考了https://github.com/dolyw/ShiroJwt*
+
+
+##FAQ
+###JWT和CAS区别是什么？
+CAS是单点登录的具体实现，JWT是一种协议，有各种语言的实现版本，CAS实现的单点登录
+每次请求都要求去CAS服务去验证token，JWT并不要求去服务端验证token，在业务服务侧
+就可以验证，相当于少一次请求调用，提升了性能，提高了可靠性。
+###JWT的缺点是什么？
+JWT最大的缺点是，一旦token发放，到期之前将会一直有效，因此，应当尽量减小token的
+有效期。
+###JWT的token泄露后，其他用户可以使用此token吗？
+可以。
