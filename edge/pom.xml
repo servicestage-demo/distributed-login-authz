@@ -6,10 +6,10 @@
 
   <groupId>com.xxx</groupId>
   <artifactId>edge</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
 
   <properties>
-    <distributed-login-authz.version>1.0-SNAPSHOT</distributed-login-authz.version>
+    <distributed-login-authz.version>1.0</distributed-login-authz.version>
     <java.version>1.8</java.version>
   </properties>
 
@@ -62,6 +62,27 @@
           <source>1.8</source>
           <target>1.8</target>
         </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <configuration>
+          <descriptor>assembly/assembly.xml</descriptor>
+          <archive>
+            <manifest>
+              <mainClass>com.xxx.edge.EdgeMain</mainClass>
+            </manifest>
+          </archive>
+          <appendAssemblyId>false</appendAssemblyId>
+        </configuration>
+        <executions>
+          <execution>
+            <id>make-assembly</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>

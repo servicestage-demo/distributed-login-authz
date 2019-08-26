@@ -18,28 +18,9 @@ public class AppMain {
   public static void main(String[] args) {
     try {
       Log4jUtils.init();
+      BeanUtils.init();
     } catch (Exception e) {
       e.printStackTrace();
-    }
-    BeanUtils.init();
-    ApplicationContext context = BeanUtils.getContext();
-    String[] str = context.getBeanDefinitionNames();
-    for (String string : str) {
-      System.out.println("..." + string);
-    }
-    System.out.println("...===============================");
-//    Annotation[] annotations = ServiceController.class.getAnnotations();
-//    for (Annotation string : annotations) {
-//      System.out.println("..."+string);
-//    }
-
-    Method[] methods = ServiceController.class.getDeclaredMethods();
-    for (Method method : methods) {
-      Annotation[] annotations = method.getDeclaredAnnotations();
-      for (Annotation annotation : annotations) {
-        System.out.println(ServiceController.class.getSimpleName().concat(".").concat(method.getName()).concat(".")
-            .concat(annotation.annotationType().getSimpleName()));
-      }
     }
   }
 }

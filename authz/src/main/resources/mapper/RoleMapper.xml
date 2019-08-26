@@ -9,7 +9,7 @@
     <result column="name" jdbcType="VARCHAR" property="name"/>
   </resultMap>
 
-  <select id="findRoleByUser" parameterType="com.xxx.authentication.model.UserDto"
+  <select id="findRoleByUser" parameterType="com.xxx.sso.model.UserDto"
     resultType="com.xxx.authentication.model.RoleDto">
     SELECT
     r.id as id,
