@@ -16,6 +16,16 @@
     <module>authz-client</module>
     <module>example</module>
   </modules>
+  <properties>
+    <cse.version>2.3.69</cse.version>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>redis.clients</groupId>
+      <artifactId>jedis</artifactId>
+      <version>2.9.0</version>
+    </dependency>
+  </dependencies>
   <build>
     <plugins>
       <plugin>

@@ -3,18 +3,21 @@ service_description:
   name: sso
   version: 1.0.3
   environment: development
-servicecomb:
+cse:
   service:
     registry:
-      address: http://127.0.0.1:30300
+      address: https://cse.cn-east-2.myhuaweicloud.com
+      instance:
+        watch: false
   rest:
-    address: 127.0.0.1:18081
-#cse:
+    address: 0.0.0.0:18081
+#servicecomb:
 #  service:
 #    registry:
-#      address: https://cse.cn-north-1.myhuaweicloud.com:443
-#      instance:
-#        watch: false
+#      address: http://127.0.0.1:30300
+#  rest:
+#    address: 127.0.0.1:18081
+
 #  monitor:
 #    client:
 #      serverUri: https://cse.cn-north-1.myhuaweicloud.com:443

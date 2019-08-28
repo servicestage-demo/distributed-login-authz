@@ -3,9 +3,11 @@ service_description:
   name: service1
   version: 1.0.8
   environment: development
-servicecomb:
+cse:
   service:
     registry:
-      address: http://127.0.0.1:30300
+      address: https://cse.cn-east-2.myhuaweicloud.com
+      instance:
+        watch: false
   rest:
-    address: 127.0.0.1:18083
+    address: 0.0.0.0:18083

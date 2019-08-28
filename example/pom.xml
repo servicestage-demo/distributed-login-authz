@@ -16,15 +16,19 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>org.apache.servicecomb</groupId>
-        <artifactId>java-chassis-dependencies</artifactId>
-        <version>1.2.0</version>
+        <groupId>com.huawei.paas.cse</groupId>
+        <artifactId>cse-dependency</artifactId>
+        <version>${cse.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
   <dependencies>
+    <dependency>
+      <groupId>com.huawei.paas.cse</groupId>
+      <artifactId>cse-solution-service-engine</artifactId>
+    </dependency>
     <dependency>
       <groupId>com.xxx</groupId>
       <artifactId>authz-client</artifactId>
