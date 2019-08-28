@@ -10,4 +10,4 @@ COPY target/edge-1.0/edge-1.0 $APP_ROOT
 RUN cd $APP_ROOT && chmod -R 770 .
 RUN chmod +x /root/servicestage/edge/bin/start.sh
 
-ENTRYPOINT ["/root/servicestage/edge/bin/start.sh"]
+ENTRYPOINT ["sh", "/root/servicestage/authz/bin/start.sh"]

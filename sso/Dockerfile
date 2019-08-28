@@ -10,4 +10,4 @@ COPY target/sso-1.0/sso-1.0 $APP_ROOT
 RUN cd $APP_ROOT && chmod -R 770 .
 RUN chmod +x /root/servicestage/sso/bin/start.sh
 
-ENTRYPOINT ["/root/servicestage/sso/bin/start.sh"]
+ENTRYPOINT ["sh", "/root/servicestage/authz/bin/start.sh"]
